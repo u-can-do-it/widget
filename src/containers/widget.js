@@ -15,7 +15,7 @@ class Widget extends Component {
 
   componentDidMount() {
     axios
-      .get("http://dev-weather-api.azurewebsites.net/api/city")
+      .get("https://dev-weather-api.azurewebsites.net/api/city")
       .then(response => {
         this.setState({ cities: response.data });
       })
@@ -35,7 +35,7 @@ class Widget extends Component {
 
     axios
       .get(
-        `http://dev-weather-api.azurewebsites.net/api/city/${
+        `https://dev-weather-api.azurewebsites.net/api/city/${
           event.target.value
         }/weather?date=${dateFormatted}`
       )
