@@ -1,0 +1,13 @@
+.dropdown,
+.dropdown:focus {
+  font-size: 24px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .dropdown,
+  .dropdown:focus {
+    font-size: 18px;
+  }
+}

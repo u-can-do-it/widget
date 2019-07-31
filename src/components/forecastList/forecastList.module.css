@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item {
+  margin: 0 16px;
+}
+
+.itemTitle {
+}
+
+.itemImg {
+  max-width: 80px;
+}
+
+.gray {
+  color: gray;
+}
+
+@media (max-width: 580px) {
+  .list {
+    flex-direction: column;
+  }
+  .item {
+    border-top: 1px solid gray;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .boxItem {
+    flex-basis: 20%;
+    text-align: left;
+  }
+  .temperature {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 400px) {
+  .temperature {
+    flex-direction: column;
+  }
+}
